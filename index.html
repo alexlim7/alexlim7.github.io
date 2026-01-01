@@ -4,107 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Business Intermediaries LLC | M&A Advisory</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --navy: #0a192f;
-            --gold-muted: #c5a059; /* Sophisticated gold-silver accent */
             --white: #ffffff;
-            --slate: #a8b2d1;
-            --light-navy: #112240;
+            --black: #1a1a1a; /* Professional charcoal black */
+            --gold: #99743d;   /* Traditional deep gold accent */
+            --light-grey: #f9f9f9;
+            --border: #e5e5e5;
         }
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--navy);
-            color: var(--slate);
-            line-height: 1.8;
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
         .container {
-            max-width: 850px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 80px 20px;
         }
         /* Logo Styling */
         .logo-container {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         .logo-img {
-            width: 180px; /* Fixed width for consistency */
+            width: 160px;
             height: auto;
             display: block;
             margin: 0 auto;
-            /* No filters - this will show the original colors of your file */
         }
         header {
             text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 60px;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
         h1, h3 {
-            font-family: 'Merriweather', serif;
-            color: var(--white);
-            font-weight: 700;
+            font-family: 'EB Garamond', serif;
+            color: var(--black);
+            font-weight: 500; /* Garamond looks better at 500/600 than heavy bold */
+            margin: 0;
         }
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.8rem;
             letter-spacing: -0.5px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         .tagline {
-            font-size: 1.1rem;
-            color: var(--gold-muted);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--gold);
             text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 500;
+            letter-spacing: 3px;
+            font-weight: 600;
         }
         .about-box {
-            font-size: 1.1rem;
-            color: var(--slate);
-            margin-bottom: 60px;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.35rem; /* Larger serif text feels like a formal letter */
+            color: #333;
+            text-align: center;
+            margin-bottom: 70px;
+            line-height: 1.6;
+            font-style: italic;
         }
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 30px;
+            gap: 40px;
             margin-bottom: 80px;
         }
         .service-card {
-            background: var(--light-navy);
-            padding: 30px;
-            border-radius: 4px;
-            border-top: 3px solid var(--gold-muted);
+            border-top: 1px solid var(--gold);
+            padding-top: 20px;
         }
         .service-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 15px;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: #555;
         }
         /* Contact Section */
         .contact-section {
             text-align: center;
-            background: var(--light-navy);
-            padding: 50px;
-            border-radius: 4px;
+            padding: 60px 20px;
+            background-color: var(--light-grey);
+            border: 1px solid var(--border);
+            border-radius: 2px;
         }
-        .contact-section h3 { margin-bottom: 10px; }
+        .contact-section h3 { 
+            font-size: 1.8rem;
+            margin-bottom: 15px; 
+        }
+        .contact-section p {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: #444;
+        }
         .email-link {
-            display: block;
-            color: var(--gold-muted);
-            font-size: 1.3rem;
+            font-family: 'Inter', sans-serif;
+            color: var(--black);
+            font-size: 1.2rem;
             font-weight: 600;
             text-decoration: none;
-            margin: 20px 0;
-            transition: color 0.3s;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 4px;
+            transition: all 0.3s ease;
         }
-        .email-link:hover { color: var(--white); }
+        .email-link:hover {
+            color: var(--gold);
+        }
         footer {
-            margin-top: 80px;
+            margin-top: 100px;
             text-align: center;
-            font-size: 0.85rem;
-            color: var(--slate);
-            opacity: 0.7;
+            font-size: 0.8rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -117,37 +136,36 @@
 
     <header>
         <h1>Legacy Business Intermediaries LLC</h1>
-        <p class="tagline">M&A Advisory & Exit Strategy</p>
+        <p class="tagline">Advisory & Exit Strategy</p>
     </header>
 
     <div class="about-box">
-        <p>Legacy Business Intermediaries LLC specializes in the confidential sale and divestiture of service-based businesses. Based in Richmond, Virginia, we provide comprehensive business valuation, strategic exit planning, and qualified buyer matching. We facilitate the professional transfer of ownership while ensuring absolute discretion and preserving the founder’s legacy.</p>
+        <p>Specializing in the confidential sale and divestiture of service-based businesses. We provide comprehensive business valuation and strategic matching, ensuring absolute discretion while preserving the founder’s legacy.</p>
     </div>
 
     <div class="services">
         <div class="service-card">
             <h3>Valuation</h3>
-            <p>Objective analysis to determine the true market value of your enterprise.</p>
+            <p>Precise financial analysis to determine the true market value of your enterprise.</p>
         </div>
         <div class="service-card">
             <h3>Exit Planning</h3>
-            <p>Strategic preparation to ensure a seamless transition and maximum value.</p>
+            <p>Strategic preparation to ensure a seamless transition and maximum value retention.</p>
         </div>
         <div class="service-card">
             <h3>Acquisition</h3>
-            <p>Connecting founders with vetted, qualified buyers who value their legacy.</p>
+            <p>Connecting founders with vetted, institutional-grade buyers across the Mid-Atlantic.</p>
         </div>
     </div>
 
     <section class="contact-section">
         <h3>Confidential Inquiry</h3>
-        <p>To discuss a potential transition, please contact our Richmond office directly.</p>
+        <p>Direct inquiries may be directed to our Richmond office.</p>
         <a href="mailto:info@legacyintermediaries.me" class="email-link">info@legacyintermediaries.me</a>
     </section>
 
     <footer>
-        <p>Richmond, Virginia</p>
-        <p>&copy; 2026 Legacy Business Intermediaries LLC. All rights reserved.</p>
+        <p>&copy; 2026 Legacy Business Intermediaries LLC</p>
     </footer>
 </div>
 
